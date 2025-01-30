@@ -7,6 +7,13 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+@media (max-width: 600px) {
+    .social-logo {
+        width: 40px; /* Make logos smaller on small screens */
+    }
+}
+
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -2593,8 +2600,8 @@ input, select, textarea {
 		justify-content: space-between;
 		background-color: #1f1815;
 		background-attachment: scroll,								scroll;
-		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
-		background-position: top left,							top left;
+		background-image: url("images/overlay.png"), url("../../images/contenidos-web-carlosarango/foto-carlos.jpg");
+		background-position: top left,							top;
 		background-repeat: repeat,								no-repeat;
 		background-size: auto,								150%;
 		color: rgba(255, 255, 255, 0.5);
@@ -3219,3 +3226,33 @@ input, select, textarea {
 			}
 
 	}
+
+
+/* JOOLEAN STYLES */
+
+.social-links {
+    display: flex;
+    justify-content: center; /* Centers the logos */
+    align-items: center; /* Vertically centers the logos */
+    flex-wrap: wrap; /* Makes the logos wrap when the screen size is small */
+    gap: 10px; /* Adds space between logos */
+	text-decoration: none;
+}
+
+.social-logo {
+    width: 50px; /* Controls the size of the logos */
+    height: auto; /* Maintains aspect ratio */
+}
+
+@media (max-width: 600px) {
+    .social-logo {
+        width: 40px; /* Make logos smaller on small screens */
+    }
+}
+
+/* Hide avatar on desktops and tablets */
+@media (min-width: 600px) {
+    .avatar {
+        display: none;
+    }
+}
