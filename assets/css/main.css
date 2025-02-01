@@ -2056,13 +2056,14 @@ input, select, textarea {
 			-webkit-transition: opacity 0.2s ease-in-out;
 			-ms-transition: opacity 0.2s ease-in-out;
 			transition: opacity 0.2s ease-in-out;
-			background: url("images/overlay.png");
+			/* background: url("images/overlay.png");  JOOLEAN*/
+			background-color: white;
 			border-radius: 0.35em;
 			content: '';
 			display: block;
 			height: 100%;
 			left: 0;
-			opacity: 0.5;
+			opacity: 0.3;
 			position: absolute;
 			top: 0;
 			width: 100%;
@@ -3061,7 +3062,7 @@ input, select, textarea {
 
 			#header {
 				background-attachment: scroll;
-				background-position: top left, center center;
+				/* background-position: top left, center center; */
 				background-size: auto,		cover;
 				left: auto;
 				padding: 6em 4em;
@@ -3169,6 +3170,8 @@ input, select, textarea {
 
 				#header h1 {
 					font-size: 1.35em;
+					/* JOOLEAN */
+					margin-top: 30%; 
 				}
 
 		/* Footer */
@@ -3229,6 +3232,10 @@ input, select, textarea {
 
 
 /* JOOLEAN STYLES */
+
+#quote {
+	text-align: left;
+}
 
 .social-links {
     display: flex;
